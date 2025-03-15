@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { BlogsComponent } from '../blogs/blogs.component';
 import { GuidesComponent } from '../guides/guides.component';
 import { ContactsComponent } from '../contacts/contacts.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-home',
@@ -28,12 +30,26 @@ export class HomeComponent {
   hau_college_guidance: string = 'Holy Angel University College Guidance Office '
   authors = 'Stewart & Maisonville';
   publicationDate_blog: number = new Date('2019-04-01').getFullYear();
-
+  private apiUrl = 'http://localhost:3000/send-email';
+  http = inject(HttpClient);
 
   sendMessage() {
+    console.log('sendMessage() function called'); // ✅ Debugging log
     if (this.message.trim()) {
-      this.sentMessage = this.message;
-      this.message = ''; 
+      console.log('Message to be sent:', this.message); // ✅ Log the message
+  
+      const postData = { message: this.message };
+  
+      this.http.post(this.apiUrl, postData).subscribe({
+        next: (response) => {
+          console.log('Message sent successfully:', response); // ✅ Log success
+          this.sentMessage = this.message;
+          this.message = ''; 
+        },
+        error: (error) => {
+          console.error('Error sending message:', error); // ✅ Log error
+        }
+      });
     }
   }
 
