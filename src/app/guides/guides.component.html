@@ -1,0 +1,94 @@
+<div class="guides">
+    <img src="guide-hero.PNG" class="guide-hero">
+    <h2 class="guidess-title">{{title}}</h2>
+
+    <div class="guide-paragraph">
+        <p>
+            Maintaining mental health is essential for overall well-being, and small, daily actions can help prevent problems before they arise. Just as regular dental hygiene prevents physical issues, mental well-being requires consistent care ({{publisher}}, n.d.).
+        </p>
+        <img src="sleep.jpg" class="guide-img-para">
+        <p>
+            Sleep plays a crucial role in mental health. Studies indicate that adults need 7–9 hours of quality sleep to maintain emotional balance. Avoiding screens, alcohol, and caffeine before bed, as well as establishing a bedtime routine, can improve sleep quality. Additionally, regular physical activity releases endorphins, reducing stress and promoting better sleep ({{publisher}}, n.d.).
+        </p>
+        <img src="balanced_diet.jpg" class="guide-img-para">
+        <p>
+            A balanced diet is another essential factor. While sugary snacks and caffeine may offer temporary boosts, they can lead to energy crashes. Eating nutrient-rich foods and having meals with others can improve mood and foster social connections ({{publisher}}, n.d.).
+        </p>
+        <img src="social.png" class="guide-img-para">
+        <p>
+            Social interactions, including acts of kindness, can enhance mental resilience. Studies show that even small gestures, like smiling or offering words of encouragement, improve well-being for both the giver and receiver ({{publisher}}, n.d.). Moreover, engaging in new experiences and keeping an open mind can help shift negative thought patterns, fostering a sense of growth and optimism ({{publisher}}, n.d.).
+        </p>
+        <img src="hobby.jpg" class="guide-img-para">
+        <p>
+            Planning enjoyable activities, such as hobbies or outings, provides something to look forward to and enhances emotional stability. This proactive approach builds hope, which is a crucial factor in mental resilience ({{publisher}}, n.d.). Furthermore, understanding emotions and managing stress through techniques like mindfulness or self-reflection helps in navigating life’s challenges ({{publisher}}, n.d.).
+        </p>
+        <p>
+            By implementing these strategies, individuals can take proactive steps in coping with their mental health and enhance their overall quality of life.
+        </p>
+    </div>
+        <div class="about">
+            <div class="column-about">
+                <div class="video-container">
+                    <iframe 
+                        [src]="videoUrl" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="column-about about-content" >
+                <h2 style="text-align: justify; margin-bottom: 0; font-size: 1.5em;">Eight Healthy Habits to Improve Mental Wellbeing</h2>
+                <p>
+                    Simple habits can improve mental health. <strong>Maintaining good posture</strong> reduces fatigue, while <strong>positive thinking</strong> boosts self-esteem ({{youtube_publisher}}, 2023). <strong>Spending time in nature</strong> enhances mood, and <strong>hugging</strong> releases oxytocin, promoting optimism. <strong>Pet interaction</strong> lowers stress, and <strong>exercise</strong> triggers endorphins for happiness. <strong>Adequate sleep</strong> prevents emotional distress, and a gratitude journal fosters positivity. Incorporating these habits leads to better mental wellbeing ({{youtube_publisher}}, 2023).
+                </p>
+            </div>
+        </div>
+        <div class="about-cont">
+            <div class="about" style="background-color: #8cdaad; padding: 1px; border-radius: 20px;">
+                <div class="column-about" >
+                    <img src="ARTICLE1.jpg" class="about-img-para">
+                </div>
+                <div class="column-about about-content" style="padding-left: 1em; padding-right: 1em;">
+                    <h3 class="prof-h3">Mental Health Self-Care Articles</h3>
+                    
+                    <ul style="margin-bottom: 1em;">
+                      <li *ngFor="let article of articles" class="prof-li">{{ article }}</li>
+                    </ul>
+                    <p style="font-size:.75em;">Resources: U.S. Department of Health and Human Services. (n.d.). Caring for your mental health. National Institute of Mental Health. https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health </p>
+                    <a href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health" target="_blank">Read Article <i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="about-cont">
+            <div class="about" style="background-color: #8cdaad; padding: 1px; border-radius: 20px;">
+                <div class="column-about" >
+                    <img src="ARTICLE2.jpg" class="about-img-para">
+                </div>
+                <div class="column-about about-content" style="padding-left: 1em; padding-right: 1em;">
+                    <h3 class="prof-h3">Emotional Wellness Toolkit</h3>
+                    
+                    <ul style="margin-bottom: 1em;">
+                      <li *ngFor="let article of articles1" class="prof-li">{{ article }}</li>
+                    </ul>
+                    <p style="font-size:.75em;">Resources: U.S. Department of Health and Human Services. (2022, August 8). Emotional wellness toolkit. National Institutes of Health. https://www.nih.gov/health-information/emotional-wellness-toolkit  </p>
+                    <a href="https://www.nih.gov/health-information/emotional-wellness-toolkit" target="_blank">Read Article <i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="about-cont" style="margin-bottom: 2em; padding-bottom: 2em;">
+            <div class="about" style="background-color: #8cdaad; padding: 1px; border-radius: 20px;">
+                <div class="column-about" >
+                    <img src="ARTICLE3.jpg" class="about-img-para">
+                </div>
+                <div class="column-about about-content" style="padding-left: 1em; padding-right: 1em;">
+                    <h3 class="prof-h3">APA advice on coping with Mental Health Problems</h3>
+                    
+                    <ul style="margin-bottom: 1em;">
+                      <li *ngFor="let article of articles2" class="prof-li">{{ article }}</li>
+                    </ul>
+                    <p style="font-size:.75em;">Resources: Anton, B. S. (2015, December). Coping with stress. Monitor on psychology. https://www.apa.org/monitor/2015/12/pc   </p>
+                    <a href="https://www.apa.org/monitor/2015/12/pc" target="_blank">Read Article <i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+                </div>
+            </div>
+        </div>
+</div>

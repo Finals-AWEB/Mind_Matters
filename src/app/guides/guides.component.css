@@ -1,0 +1,179 @@
+.guide-hero{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.guides h2{
+    text-align: center;
+    margin-top: 1em ;
+    font-size: 2.5em;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+.guide-paragraph{
+    width: 60% ;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.guides p{
+    margin-bottom: 1em;
+    text-align: justify;
+    margin-top: 1em;
+    line-height: 2.5em;
+}
+
+.guide-img-para{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+.column-about {
+    float: left;
+    width: 50%; 
+  }
+
+.about:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.about{
+    padding-top: 5em;
+    margin: 0 auto;
+    width: 60%;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.about-img-para{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px 0 0 20px ;
+    height: auto;
+    padding-bottom: 0;
+}
+.about-cont{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #8abdc1;
+    padding-top: 2em;
+}
+
+.prof-h3{
+    margin-top: .5em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.prof-li{
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.1em;
+}
+
+@media screen and (max-width: 1024px) {
+    .guide-paragraph {
+        width: 80%;
+        font-size: 1.1em;
+    }
+
+    .guide-img-para {
+        width: 80%;
+    }
+
+    .about {
+        width: 80%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .column-about {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .about-img-para {
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .guide-paragraph {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .guide-img-para {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .guides h2 {
+        font-size: 2em;
+        margin-bottom: 1.5em;
+    }
+
+    .guides p {
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .about {
+        width: 90%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .prof-h3 {
+        font-size: 1.2em;
+    }
+
+    .prof-li {
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
+}
+
+.video-container {
+    position: relative;
+    width: 95%;
+    padding-top: 56.25%; 
+    border-radius: 20px;
+    margin-top: 3em;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .column-about {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-container {
+        padding-top: 75%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-container {
+        padding-top: 100%; 
+    }
+}

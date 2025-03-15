@@ -1,0 +1,132 @@
+.blogs-title{
+    text-align: center;
+    font-size: 5em;
+    font-weight: bolder;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.blog-hero{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 0 40px 0 40px;
+}
+
+.blogs h3{
+    text-align: center;
+    margin-top: 1em ;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #ff8229;
+    text-transform: uppercase;
+}
+
+.blog-paragraph{
+    width: 60% ;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.blog-paragraph p{
+    margin-bottom: 1em;
+    line-height: 2em;
+    text-align: justify;
+}
+
+.about:after, .benefits-cont{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column-benefits {
+    float: left;
+    width: 50%;
+    padding: 1em;
+  }
+
+.benefits-cont{
+    width: 61%;
+    margin: 0 auto;
+}
+
+.benefits-paragraph{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5em;
+}
+
+.benefits-img{
+
+    width: 85%;
+    border-radius: 20px;
+}
+
+.date-loc{
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+.blog-quote{
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.blogs{
+    padding-bottom: 8em;
+}
+
+/* Tablet viewport */
+@media (max-width: 768px) {
+    .blogs-title {
+        font-size: 3em;
+    }
+    .blogs h3 {
+        font-size: 2em;
+    }
+    .blog-hero, .blog-paragraph, .blog-quote, .benefits-cont {
+        width: 80%;
+    }
+    .blog-paragraph {
+        font-size: 1em;
+    }
+    .column-benefits {
+        width: 100%;
+        text-align: center;
+    }
+    .benefits-paragraph {
+        font-size: 1.2em;
+        padding: 3em;
+    }
+    .benefits-img {
+        width: 100%;
+    }
+    .blogs {
+        padding-bottom: 4em;
+    }
+}
+
+/* Mobile viewport*/
+@media (max-width: 480px) {
+    .blogs-title {
+        font-size: 2.5em;
+    }
+    .blogs h3 {
+        font-size: 1.8em;
+    }
+    .blog-hero, .blog-paragraph, .blog-quote, .benefits-cont {
+        width: 95%;
+    }
+    .blog-paragraph {
+        font-size: 0.9em;
+    }
+    .benefits-paragraph {
+        font-size: 1em;
+        padding: 2em;
+    }
+    .blogs {
+        padding-bottom: 2em;
+    }
+}

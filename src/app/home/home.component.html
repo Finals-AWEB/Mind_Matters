@@ -1,0 +1,88 @@
+<div class="hero-img">
+    <h1>{{tagline}}</h1>
+    <a  class="contact-hero"  routerLink="/contact" routerLinkActive="active">Contact Us<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+</div>
+<div class="guide">
+    <div class="column" >
+        <img src="GUIDANCE.png" alt="strategies hands">
+        <h2>{{guide_categ1}}</h2>
+        <p style="text-align: justify; line-height: 2em;">Understanding and managing mental health is essential for student success. {{title}}, {{guide_categ1}} focuses on evidence-based techniques, expert insights, and self-care strategies to help students navigate academic stress, personal challenges, and emotional well-being.</p>
+      </div>
+      <div class="column" >
+        <img src="STRATEGIES.png" alt="strategies hands" >
+        <h2>{{guide_categ2}}</h2>
+        <p style="text-align: justify; line-height: 2em;">Managing school, relationships, and personal well-being requires effective mental health {{guide_categ2}}. Mind Matters, {{guide_categ2}} focuses on evidence-based techniques, lifestyle adjustments, and coping skills to promote emotional well-being. This category equips students with practical methods to build resilience, enhance focus, and maintain a balanced mind amidst academic pressures.</p>
+      </div>
+      <div class="column" >
+        <img src="SUPPORT.png" alt="strategies hands" >
+        <h2>{{guide_categ3}}</h2>
+        <p style="text-align: justify; line-height: 2em;">A strong {{guide_categ3}} system can make all the difference in a student’s mental health journey. {{title}},  {{guide_categ3}} focuses on evidence-based techniques, peer connections, and shared experiences to create a safe and understanding environment. By fostering a culture of openness and encouragement, this category ensures that students feel valued, heard, and supported in their challenges.</p>
+      </div>
+      
+</div>
+<div class="guide-btn-cont">
+    <a class="guide-button" routerLink="/guide" routerLinkActive="active">Our Guide<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+</div>
+<div class="about-contain">
+    <div class="about">
+        <div class="column-about" >
+            <img src="positive_mental_health.jpg" alt="strategies hands" class="about-img">
+        </div>
+        <div class="column-about about-content" >
+            <h2>{{description}}</h2>
+            <div class="about-paragraph">
+                <p class="date"><strong>Publication Date:</strong> {{ publicationDate | date:'fullDate' }}</p>
+                <p>
+                    According to {{ author }} ({{ year }}), student mental health is essential for their well-being, academic success, and relationships. 
+                    Good mental health helps students stay focused, build strong connections, and develop confidence.
+                  </p>
+                
+                  <p>
+                    As mentioned by {{ author }} ({{ year }}), maintaining good mental health allows students to handle stress better and adapt to challenges. 
+                    When students prioritize their mental health, they perform better in school and maintain positive relationships.
+                  </p>
+                
+                  <p>
+                    As stated by {{ author }} ({{ year }}), recognizing the importance of mental well-being and seeking support when needed can lead to a healthier and more successful life.
+                  </p>
+                
+                  <p>
+            </div>
+        </div> 
+    </div>
+</div>
+<div class="blogs">
+    <h2 class="blogs-title" style="text-align: right; padding-right: 5em; margin-bottom: 1em; margin-top: 1em;" >Blogs</h2>
+    <img src="BLOG_HERO_IMAGE.jpg">
+    <h3>How to cope and overcome Mental Health Problems</h3>
+    <p>
+        As mentioned by <span>{{ authors }}</span> ({{ publicationDate_blog }}), stress can come from both external and internal factors. External stressors, such as workload or financial difficulties, may often be managed through proactive solutions like time management or financial planning. On the other hand, internal stressors related to mindset and attitude require personal coping strategies to ensure mental well-being.
+    </p>
+
+    <p>
+        According to <span>{{ authors }}</span> ({{ publicationDate_blog }}), exercise is an effective way to combat stress, improving mood and energy levels. Proper sleep habits also play a crucial role in reducing stress, as sleep deprivation can negatively affect focus and increase anxiety. Additionally, financial concerns are a leading cause of stress, making money management an important skill for students.
+    </p>
+
+    <p>
+        As stated by <span>{{ authors }}</span> ({{ publicationDate_blog }}), adjusting one’s attitude can significantly influence stress levels. A positive mindset helps students handle academic and personal challenges with resilience. Engaging in enjoyable activities, practicing mindfulness, or listening to music can contribute to overall well-being. Furthermore, relaxation techniques such as deep breathing, meditation, yoga, and progressive muscle relaxation have been proven to alleviate stress and enhance mental clarity.
+    </p>
+
+    <p>
+        As highlighted by <span>{{ authors }}</span> ({{ publicationDate_blog }}), students should explore different stress management techniques that work best for them. When stress becomes overwhelming, seeking guidance and support is essential. Acknowledging the need for help is a step towards maintaining a healthy balance in life.
+    </p>
+    <div class="guide-btn-cont">
+        <a class="guide-button" routerLink="/blog" routerLinkActive="active">Read More<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+    </div> 
+</div>
+<div class="contact-cont">
+    <h3>We are here to help</h3>
+    <p>Your mental well-being matters! Whether you're facing academic stress, personal challenges, or just need someone to talk to, {{title}} is here to support you. We provide guidance, strategies, and a safe space for students to learn, connect, and grow. In line with the mission of the {{hau_college_guidance}}, we aim to promote student well-being by fostering a supportive and understanding environment. Send us a message, we’re here to listen and help!</p>
+    <div class="input-container">
+        <input type="text" [(ngModel)]="message" placeholder="Send your thoughts" style="color: white;"/>
+        <button (click)="sendMessage()">Send</button>
+      </div>
+    <div class="guide-btn-cont .cont-btn">
+        <a class="guide-button" routerLink="/contact" routerLinkActive="active">Contact Us<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+    </div> 
+</div>
+<p *ngIf="sentMessage">You sent: {{ sentMessage }}</p>

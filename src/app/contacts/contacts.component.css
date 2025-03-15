@@ -1,0 +1,272 @@
+.about-contain{
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+.column-about {
+    float: left;
+    width: 50%; 
+  }
+
+.about:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+.about-paragraph{
+    padding-top: 3em;
+}
+
+.contact-head{
+    margin-top: 1em;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.contact-details{
+    font-size: 1.5em;
+    text-indent: 2em;
+}
+
+.arrow-contact {
+    margin-left: 8px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: #7d8a8e;
+}
+
+.contact-cont{
+    width: 100%;
+    padding-bottom: 3em;
+    background-image: url("../../../public/contact-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    padding-top: 3em;
+}
+
+.contact-cont p{
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 2em;
+    color: white;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding-left: 10px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  
+  input {
+    flex: 1;
+    padding: 15px 100px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #8abdc1;
+    color: #fff;
+    padding-left: 20px ;
+  }
+  
+  button {
+    background-color: #8abdc1;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #8abdc1;
+  }
+
+  input::placeholder {
+    color: white;
+    font-style: normal;
+    opacity: 1;
+
+  }
+  .contact-cont h3{
+    font-size: 3em;
+    font-weight: bolder;
+  }
+
+  .cont-cont{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .cont-h3{
+    text-align: center;
+    color: white;
+    padding-bottom: 1em;
+
+  }
+
+  .guide-button{
+    margin-top: 0 !important;
+     text-align: center;
+     padding: 1em 4em;
+     background-color:#7d8a8e ;
+     border-radius: 15px;
+     color: white;  
+ }
+ 
+ .guide-btn-cont {
+     margin: 0 auto;
+     width: 60%;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 3em;
+ }
+
+ /* Tablet Viewport */
+@media screen and (max-width: 1024px) {
+    .about-contain,
+    .cont-cont {
+        width: 80%;
+    }
+
+    .column-about {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .contact-head {
+        font-size: 2em;
+    }
+
+    .contact-details {
+        font-size: 1.3em;
+    }
+
+    .contact-cont {
+        height: auto;
+        padding: 2em 1em;
+    }
+
+    .contact-cont h3 {
+        font-size: 2.5em;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    input {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Mobile Viewport */
+@media screen and (max-width: 768px) {
+    .about-contain,
+    .cont-cont {
+        width: 90%;
+    }
+
+    .contact-head {
+        font-size: 1.8em;
+    }
+
+    .contact-details {
+        font-size: 1.2em;
+    }
+
+    .contact-cont h3 {
+        font-size: 2em;
+    }
+
+    .contact-cont p {
+        font-size: 1em;
+    }
+
+    .input-container {
+        flex-direction: column;
+        max-width: 100%;
+        gap: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .guide-btn-cont {
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+
+    .guide-button {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-contain,
+    .cont-cont {
+        width: 95%;
+    }
+
+    .contact-head {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    .contact-details {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .contact-cont h3 {
+        font-size: 1.8em;
+    }
+
+    .contact-cont p {
+        font-size: 0.95em;
+    }
+
+    .input-container {
+        width: 100%;
+        padding: 0;
+        margin: 1em 0;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    .guide-button {
+        width: 100%;
+    }
+}

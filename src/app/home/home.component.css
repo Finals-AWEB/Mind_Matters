@@ -1,0 +1,282 @@
+.hero-img{
+    background-image: url('../../../public/mind_matters_hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50em;
+    padding-left: 5em;
+}
+h1{
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 5em;
+    width: 45%;
+    text-transform: uppercase;
+    line-height: 2em;
+    color: #7d8a8e;
+    
+}
+.contact-hero{
+    padding: 1em 3em;
+    background-color:#7d8a8e ;
+    border-radius: 15px;
+    color: white;    
+}
+
+.arrow-contact {
+    margin-left: 8px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: #7d8a8e;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 1em;
+  }
+
+.column-about {
+    float: left;
+    width: 50%;
+    padding: 1em;
+  
+  }
+
+.guide:after , .about:after, .input-container::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.guide, .about{
+    padding-top: 5em;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+.guide h2, .guide p, .guide img{
+    text-align: center;
+    justify-content: center;
+}
+
+.guide img{
+    height: 250px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.guide h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.about-contain{
+    background-color: #8abdc1;
+}
+
+.about-img{
+    border-radius: 30px;
+}
+
+.about-content h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.guide-button{
+   margin-top: 0 !important;
+    text-align: center;
+    padding: 1em 4em;
+    background-color:#7d8a8e ;
+    border-radius: 15px;
+    color: white;  
+}
+
+.guide-btn-cont {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.blogs h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5em;
+}
+.blogs img{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-radius: 0 40px 0 40px;
+  
+}
+.blogs p, .contact-cont p{
+    text-align: center;
+}
+.blogs h3, .contact-cont h3{
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff8229;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.contact-cont{
+    padding-bottom: 3em;
+    background-color: #8cdaad;
+    padding-top: 3em;
+}
+
+.contact-cont p{
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 2em;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding-left: 10px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  
+  input {
+    flex: 1;
+    padding: 15px 100px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #8abdc1;
+    color: #fff;
+    padding-left: 20px ;
+  }
+  
+  button {
+    background-color: #8abdc1;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #8abdc1;
+  }
+
+  input::placeholder {
+    color: white;
+    font-style: normal;
+    opacity: 1;
+
+  }
+  .contact-cont h3{
+    font-size: 3em;
+    font-weight: bolder;
+  }
+.about-paragraph{
+    margin-top: .5em;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+.date{
+    font-size: .75em;
+    margin-bottom: 1em;
+}
+
+.about-paragraph p{
+    margin-bottom: .75em;
+}
+.blogs p{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+
+.contact-cont p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 1024px) {
+    .hero-img {
+        height: 30em;
+        padding-left: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+        width: 70%;
+        line-height: 2em;
+        margin-bottom: 1em;
+    }
+
+    .column, .column-about {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .guide img {
+        width: 80%;
+        height: auto;
+    }
+
+    .guide-button, .contact-hero {
+        padding: 0.8em 2em;
+    }
+
+    .input-container {
+        max-width: 300px;
+    }
+
+    input {
+        padding: 10px 50px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .guide h2 {
+        font-size: 1.2em;
+    }
+
+    .about-content h2 {
+        font-size: 1.5em;
+    }
+
+    .input-container {
+        gap: 5px;
+    }
+
+    input {
+        padding: 10px 20px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}
