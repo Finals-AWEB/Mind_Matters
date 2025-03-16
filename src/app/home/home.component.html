@@ -1,8 +1,8 @@
-<div class="hero-img">
+<div class="hero-img" @fadeInOut>
     <h1>{{tagline}}</h1>
     <a  class="contact-hero"  routerLink="/contact" routerLinkActive="active">Contact Us<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
 </div>
-<div class="guide">
+<div class="guide" @fadeInOut>
     <div class="column" >
         <img src="GUIDANCE.png" alt="strategies hands">
         <h2>{{guide_categ1}}</h2>
@@ -20,10 +20,10 @@
       </div>
       
 </div>
-<div class="guide-btn-cont">
+<div class="guide-btn-cont" @fadeInOut>
     <a class="guide-button" routerLink="/guide" routerLinkActive="active">Our Guide<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
 </div>
-<div class="about-contain">
+<div class="about-contain" @fadeInOut>
     <div class="about">
         <div class="column-about" >
             <img src="positive_mental_health.jpg" alt="strategies hands" class="about-img">
@@ -51,7 +51,7 @@
         </div> 
     </div>
 </div>
-<div class="blogs">
+<div class="blogs" @fadeInOut>
     <h2 class="blogs-title" style="text-align: right; padding-right: 5em; margin-bottom: 1em; margin-top: 1em;" >Blogs</h2>
     <img src="BLOG_HERO_IMAGE.jpg">
     <h3>How to cope and overcome Mental Health Problems</h3>
@@ -74,7 +74,7 @@
         <a class="guide-button" routerLink="/blog" routerLinkActive="active">Read More<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
     </div> 
 </div>
-<div class="contact-cont">
+<div class="contact-cont" @fadeInOut>
     <h3>We are here to help</h3>
     <p>Your mental well-being matters! Whether you're facing academic stress, personal challenges, or just need someone to talk to, {{title}} is here to support you. We provide guidance, strategies, and a safe space for students to learn, connect, and grow. In line with the mission of the {{hau_college_guidance}}, we aim to promote student well-being by fostering a supportive and understanding environment. Send us a message, we’re here to listen and help!</p>
     <div class="input-container">
