@@ -5,13 +5,25 @@ import { ContactsComponent } from '../contacts/contacts.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [FormsModule, CommonModule, RouterModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css'],
+  animations: [
+    trigger('fadeInOut', [
+      state('void', style({ opacity: 0 })), 
+      transition(':enter', [ 
+        animate('500ms ease-in', style({ opacity: 1 }))
+      ]),
+      transition(':leave', [ 
+        animate('500ms ease-out', style({ opacity: 0 }))
+      ])
+    ])
+  ]
 })
 export class HomeComponent {
   title = 'Mind Matters';
@@ -36,6 +48,8 @@ export class HomeComponent {
       this.message = ''; 
     }
   }
+
+ 
 
 
 }
