@@ -3,13 +3,25 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-contacts',
   standalone: true,
   imports: [RouterModule,CommonModule, FormsModule],
   templateUrl: './contacts.component.html',
-  styleUrl: './contacts.component.css'
+  styleUrls: './contacts.component.css',
+  animations: [
+    trigger('fadeInOut', [
+      state('void', style({ opacity: 0 })), 
+      transition(':enter', [ 
+        animate('500ms ease-in', style({ opacity: 1 }))
+      ]),
+      transition(':leave', [ 
+        animate('500ms ease-out', style({ opacity: 0 }))
+      ])
+    ])
+  ]
 })
 export class ContactsComponent {
   title = 'Mind Matters';
