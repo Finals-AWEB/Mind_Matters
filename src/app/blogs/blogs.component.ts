@@ -1,13 +1,25 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-blogs',
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './blogs.component.html',
-  styleUrl: './blogs.component.css'
+  styleUrls: './blogs.component.css',
+  animations: [
+    trigger('fadeInOut', [
+      state('void', style({ opacity: 0 })), 
+      transition(':enter', [ 
+        animate('500ms ease-in', style({ opacity: 1 }))
+      ]),
+      transition(':leave', [ 
+        animate('500ms ease-out', style({ opacity: 0 }))
+      ])
+    ])
+  ]
 })
 export class BlogsComponent {
   title: string = 'Blogs';
