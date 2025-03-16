@@ -8,7 +8,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './blogs.component.html',
-  styleUrls: './blogs.component.css',
+  styleUrl: './blogs.component.css',
   animations: [
     trigger('fadeInOut', [
       state('void', style({ opacity: 0 })), 

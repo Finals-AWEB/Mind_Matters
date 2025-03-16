@@ -3,11 +3,11 @@
         <div class="column-about about-content" >
             <h2></h2>
             <div class="about-paragraph">
-                <p class="contact-head"><i class="fa-solid fa-phone"></i>  REACH OUT NOW</p>
+                <p class="contact-head"><mat-icon>call</mat-icon>  REACH OUT NOW</p>
                 <p class="contact-details">+63 906 398 2830</p>
-                <p class="contact-head"><i class="fa-solid fa-envelope"></i>  SEND A MESSAGE</p>
+                <p class="contact-head"><mat-icon> email</mat-icon>  SEND A MESSAGE</p>
                 <p class="contact-details">www.facebook.com/hauguidanceoffice</p>
-                <p class="contact-head"><i class="fa-solid fa-map-location-dot"></i>  TAKE A VISIT</p>
+                <p class="contact-head"><mat-icon> location_on</mat-icon>  TAKE A VISIT</p>
                 <p class="contact-details">#1 Holy Angel Avenue, Sto. Rosario,</p>
                 <p class="contact-details">Angeles City, Philippines 2009</p>
             </div>
@@ -20,13 +20,17 @@
 <div class="contact-cont" @fadeInOut>
     <div class="cont-cont">
         <h3 class="cont-h3">We are here to help</h3>
-        <p>Your mental well-being matters! Whether you're facing academic stress, personal challenges, or just need someone to talk to, {{title}} is here to support you. We provide guidance, strategies, and a safe space for students to learn, connect, and grow. In line with the mission of the {{hau_college_guidance}}, we aim to promote student well-being by fostering a supportive and understanding environment. Send us a message, we’re here to listen and help!</p>
+        <mat-divider [ngStyle]="{'border-top-color': '#fff'}"></mat-divider>
+        <p style="margin-top: 2em;">Your mental well-being matters! Whether you're facing academic stress, personal challenges, or just need someone to talk to, {{title}} is here to support you. We provide guidance, strategies, and a safe space for students to learn, connect, and grow. In line with the mission of the {{hau_college_guidance}}, we aim to promote student well-being by fostering a supportive and understanding environment. Send us a message, we’re here to listen and help!</p>
         <div class="input-container">
-            <input type="text" [(ngModel)]="message" placeholder="Send your thoughts" style="color: white;"/>
-            <button (click)="sendMessage()">Send</button>
+            <mat-form-field appearance="fill">
+                <mat-label>Send your thoughts</mat-label>
+                <input matInput type="text" [(ngModel)]="message" >
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="sendMessage()">Send</button>
         </div>
         <div class="guide-btn-cont .cont-btn">
-            <a class="guide-button" href="https://www.facebook.com/hauguidanceoffice" target="_blank">Contact Us<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+            <a class="guide-button" href="https://www.facebook.com/hauguidanceoffice" target="_blank">Contact Us <mat-icon style="padding-top:5px;">forward</mat-icon></a>
         </div> 
     </div>
 </div>

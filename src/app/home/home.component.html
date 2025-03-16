@@ -1,27 +1,30 @@
 <div class="hero-img" @fadeInOut>
     <h1>{{tagline}}</h1>
-    <a  class="contact-hero"  routerLink="/contact" routerLinkActive="active">Contact Us<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+    <a  class="contact-hero"  routerLink="/contact" routerLinkActive="active">Contact Us <mat-icon style="padding-top:5px;">forward</mat-icon></a>
 </div>
 <div class="guide" @fadeInOut>
     <div class="column" >
         <img src="GUIDANCE.png" alt="strategies hands">
-        <h2>{{guide_categ1}}</h2>
-        <p style="text-align: justify; line-height: 2em;">Understanding and managing mental health is essential for student success. {{title}}, {{guide_categ1}} focuses on evidence-based techniques, expert insights, and self-care strategies to help students navigate academic stress, personal challenges, and emotional well-being.</p>
+        <h2 style="margin-bottom: .5em;">{{guide_categ1}}</h2>
+        <mat-divider [ngStyle]="{'border-top-color': '#000'}"></mat-divider>
+        <p style="text-align: justify; line-height: 2em; margin-top: .5em;">Understanding and managing mental health is essential for student success. {{title}}, {{guide_categ1}} focuses on evidence-based techniques, expert insights, and self-care strategies to help students navigate academic stress, personal challenges, and emotional well-being.</p>
       </div>
       <div class="column" >
         <img src="STRATEGIES.png" alt="strategies hands" >
-        <h2>{{guide_categ2}}</h2>
-        <p style="text-align: justify; line-height: 2em;">Managing school, relationships, and personal well-being requires effective mental health {{guide_categ2}}. Mind Matters, {{guide_categ2}} focuses on evidence-based techniques, lifestyle adjustments, and coping skills to promote emotional well-being. This category equips students with practical methods to build resilience, enhance focus, and maintain a balanced mind amidst academic pressures.</p>
+        <h2 style="margin-bottom: .5em;">{{guide_categ2}}</h2>
+        <mat-divider [ngStyle]="{'border-top-color': '#000'}"></mat-divider>
+        <p style="text-align: justify; line-height: 2em; margin-top: .5em;">Managing school, relationships, and personal well-being requires effective mental health {{guide_categ2}}. Mind Matters, {{guide_categ2}} focuses on evidence-based techniques, lifestyle adjustments, and coping skills to promote emotional well-being. This category equips students with practical methods to build resilience, enhance focus, and maintain a balanced mind amidst academic pressures.</p>
       </div>
       <div class="column" >
         <img src="SUPPORT.png" alt="strategies hands" >
-        <h2>{{guide_categ3}}</h2>
-        <p style="text-align: justify; line-height: 2em;">A strong {{guide_categ3}} system can make all the difference in a student’s mental health journey. {{title}},  {{guide_categ3}} focuses on evidence-based techniques, peer connections, and shared experiences to create a safe and understanding environment. By fostering a culture of openness and encouragement, this category ensures that students feel valued, heard, and supported in their challenges.</p>
+        <h2 style="margin-bottom: .5em;">{{guide_categ3}}</h2>
+        <mat-divider [ngStyle]="{'border-top-color': '#000'}"></mat-divider>
+        <p style="text-align: justify; line-height: 2em; margin-top: .5em;">A strong {{guide_categ3}} system can make all the difference in a student’s mental health journey. {{title}},  {{guide_categ3}} focuses on evidence-based techniques, peer connections, and shared experiences to create a safe and understanding environment. By fostering a culture of openness and encouragement, this category ensures that students feel valued, heard, and supported in their challenges.</p>
       </div>
       
 </div>
 <div class="guide-btn-cont" @fadeInOut>
-    <a class="guide-button" routerLink="/guide" routerLinkActive="active">Our Guide<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+    <a class="guide-button" routerLink="/guide" routerLinkActive="active">Our Guide <mat-icon style="padding-top:5px;">forward</mat-icon></a>
 </div>
 <div class="about-contain" @fadeInOut>
     <div class="about">
@@ -71,19 +74,25 @@
         As highlighted by <span>{{ authors }}</span> ({{ publicationDate_blog }}), students should explore different stress management techniques that work best for them. When stress becomes overwhelming, seeking guidance and support is essential. Acknowledging the need for help is a step towards maintaining a healthy balance in life.
     </p>
     <div class="guide-btn-cont">
-        <a class="guide-button" routerLink="/blog" routerLinkActive="active">Read More<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+        <a class="guide-button" routerLink="/blog" routerLinkActive="active">Read More <mat-icon style="padding-top:5px;">forward</mat-icon></a>
     </div> 
 </div>
 
 <div class="contact-cont" @fadeInOut>
     <h3>We are here to help</h3>
-    <p>Your mental well-being matters! Whether you're facing academic stress, personal challenges, or just need someone to talk to, {{title}} is here to support you. We provide guidance, strategies, and a safe space for students to learn, connect, and grow. In line with the mission of the {{hau_college_guidance}}, we aim to promote student well-being by fostering a supportive and understanding environment. Send us a message, we’re here to listen and help!</p>
+    <mat-divider [ngStyle]="{'border-top-color': '#ff8229'}"></mat-divider>
+    <p style="padding-top: 2em;">Your mental well-being matters! Whether you're facing academic stress, personal challenges, or just need someone to talk to, {{title}} is here to support you. We provide guidance, strategies, and a safe space for students to learn, connect, and grow. In line with the mission of the {{hau_college_guidance}}, we aim to promote student well-being by fostering a supportive and understanding environment. Send us a message, we’re here to listen and help!</p>
+    
     <div class="input-container">
-        <input type="text" [(ngModel)]="message" placeholder="Send your thoughts" style="color: white;"/>
-        <button (click)="sendMessage()">Send</button>
-      </div>
+        <mat-form-field appearance="fill">
+            <mat-label>Send your thoughts</mat-label>
+            <input matInput type="text" [(ngModel)]="message" >
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="sendMessage()">Send</button>
+    </div>
+
     <div class="guide-btn-cont .cont-btn">
-        <a class="guide-button" routerLink="/contact" routerLinkActive="active">Contact Us<i class="fa-solid fa-arrow-right arrow-contact"></i></a>
+        <a class="guide-button" routerLink="/contact" routerLinkActive="active">Contact Us <mat-icon style="padding-top:5px;">forward</mat-icon></a>
     </div> 
 </div>
 <p *ngIf="sentMessage">You sent: {{ sentMessage }}</p>

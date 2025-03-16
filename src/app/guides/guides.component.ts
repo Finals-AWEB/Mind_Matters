@@ -9,7 +9,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   standalone: true,
   imports: [RouterModule,CommonModule],
   templateUrl: './guides.component.html',
-  styleUrls: './guides.component.css',
+  styleUrl: './guides.component.css',
   animations: [
     trigger('fadeInOut', [
       state('void', style({ opacity: 0 })), 

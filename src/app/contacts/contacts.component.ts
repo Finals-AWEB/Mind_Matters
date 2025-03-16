@@ -4,13 +4,17 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-contacts',
   standalone: true,
-  imports: [RouterModule,CommonModule, FormsModule],
+  imports: [RouterModule,CommonModule, FormsModule, MatInputModule, MatFormFieldModule, MatDividerModule, MatIconModule],
   templateUrl: './contacts.component.html',
-  styleUrls: './contacts.component.css',
+  styleUrl: './contacts.component.css',
   animations: [
     trigger('fadeInOut', [
       state('void', style({ opacity: 0 })), 

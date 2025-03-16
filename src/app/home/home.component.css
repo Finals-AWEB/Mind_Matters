@@ -92,7 +92,7 @@ h1{
 .guide-button{
    margin-top: 0 !important;
     text-align: center;
-    padding: 1em 4em;
+    padding: .75em 2em;
     background-color:#7d8a8e ;
     border-radius: 15px;
     color: white;  
@@ -152,16 +152,6 @@ h1{
     margin-top: 2em;
   }
   
-  input {
-    flex: 1;
-    padding: 15px 100px;
-    border-radius: 30px;
-    outline: none;
-    background-color: #8abdc1;
-    color: #fff;
-    padding-left: 20px ;
-  }
-  
   button {
     background-color: #8abdc1;
     color: white;
@@ -169,6 +159,7 @@ h1{
     padding: 15px 30px;
     cursor: pointer;
     border-radius: 30px;
+    margin-top: -1em;
     transition: 0.3s;
   }
   
@@ -267,7 +258,9 @@ h1{
     .about-content h2 {
         font-size: 1.5em;
     }
-
+    .about-content p{
+        font-size: .75em;
+    }
     .input-container {
         gap: 5px;
     }
