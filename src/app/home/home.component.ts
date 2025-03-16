@@ -45,20 +45,20 @@ export class HomeComponent {
   http = inject(HttpClient);
 
   sendMessage() {
-    console.log('sendMessage() function called'); // ✅ Debugging log
+    console.log('sendMessage() function called'); //Debugging log
     if (this.message.trim()) {
-      console.log('Message to be sent:', this.message); // ✅ Log the message
+      console.log('Message to be sent:', this.message); //Log the message
   
       const postData = { message: this.message };
   
       this.http.post(this.apiUrl, postData).subscribe({
         next: (response) => {
-          console.log('Message sent successfully:', response); // ✅ Log success
+          console.log('Message sent successfully:', response); //Log success
           this.sentMessage = this.message;
           this.message = ''; 
         },
         error: (error) => {
-          console.error('Error sending message:', error); // ✅ Log error
+          console.error('Error sending message:', error); //Log error
         }
       });
     }
