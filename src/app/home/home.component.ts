@@ -45,7 +45,7 @@ export class HomeComponent {
   hau_college_guidance: string = 'Holy Angel University College Guidance Office '
   authors = 'Stewart & Maisonville';
   publicationDate_blog: number = new Date('2019-04-01').getFullYear();
-  private apiUrl = 'http://localhost:3000/send-email';
+  private apiUrl = '/.netlify/functions/send-email';
   http = inject(HttpClient);
 
   sendMessage() {
